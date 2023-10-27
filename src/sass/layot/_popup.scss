@@ -1,0 +1,23 @@
+.popup, .popupError {
+    width: 400px;
+    height: 100px;
+    background-color: var(--white-color);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popupError {
+    width: 650px;
+    height: 150px;
+}
+

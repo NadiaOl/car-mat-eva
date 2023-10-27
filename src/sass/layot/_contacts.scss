@@ -1,0 +1,39 @@
+.contactsWrap {
+    display: flex;
+    background-color: rgba(240, 240, 240, 0.5);
+    margin-top: 60px;
+    margin-bottom: 90px;
+    gap: 60px;
+}
+
+.addresssWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.contactsTitle {
+    margin-bottom: 20px;
+}
+.contactsItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.openMap {
+    margin-top: 10px;
+
+}
+
+.map {
+
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    width: 100px;
+    height: 75px;
+    @media screen and (min-width: 1200px) {
+        width: 600px;
+        height: 400px;
+    }
+    }

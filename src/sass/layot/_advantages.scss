@@ -1,0 +1,28 @@
+.advantagesList {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+margin-top: 60px;
+}
+.advantagesItem {
+    border-radius: 12px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    width: calc((100% - 30px)/2);
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px)/3);
+    }
+
+}
+
+.advantagesImg {
+width: 100%;
+}
+
+.advantagesTitle {
+    padding: 20px 10px;
+}
+.advantagesDescription {
+    padding: 20px 10px;
+}

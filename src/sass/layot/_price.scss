@@ -1,0 +1,47 @@
+.priceWrap{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.attention {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.priceLict {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: inherit;
+    justify-content: center
+}
+.complect, .priceItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: var(--white-color);
+    padding: 20px 10px 40px 10px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.complect {
+    width: 500px;
+}
+.priceImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.priceBtn {
+    background-color: var(--additional-color);
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+    &:hover,
+    &:focus {
+        background-color: var(--white-color)}
+}
