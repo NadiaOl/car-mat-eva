@@ -7,7 +7,6 @@ const jsOrderType = document.querySelector(".jsOrderType")
 const radioButtons = document.querySelectorAll(".jsRadioBtn");
 const mobileMenuWrap = document.querySelector(".mobileMenuWrap")
 
-
 openModalBtn.addEventListener("click", handlerOpenModal)
 openModalSection.addEventListener("click", handlerOpenModal)
 modal.addEventListener("click", handlerCloseModal)
@@ -49,12 +48,12 @@ function handlerSelectPrice (event) {
 function handlerCloseModal (event) {
     if(
         event.target.className === "backdrop" || 
-        event.currentTarget.localName === "button" 
-        ||         event.target.localName === "button"
-         ) {
-            modal.classList.add("isHidden")
-            mobileMenuWrap.classList.add('hide')
-            window.removeEventListener("keydown", handlerCloseModalEsc)
+        event.target.localName  === "svg" ||
+        event.target.localName === "button"
+    ) {
+        modal.classList.add("isHidden")
+        mobileMenuWrap.classList.add('hide')
+        window.removeEventListener("keydown", handlerCloseModalEsc)
     }
 }
 

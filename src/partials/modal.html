@@ -1,0 +1,152 @@
+<div class="backdrop isHidden">
+    <div class="modal">
+      <button type="button" class="modalClose">
+        <svg class="iconClose" width="20" height="20">
+          <use href="./images/svg/symbol-defs.svg#icon-close">
+          </use>
+        </svg>
+      </button>
+      <h3 class="formTitle">Оформити замовлення</h3>
+      <div class="marquee">
+        <h4 class="attentionModal">Зверніть увагу! Ми виготовляємо килимки тільки під замовлення та тільки у м.Дніпро, ми не відправляємо килимки в інші міста.</h4>
+      </div>
+      <form class="form" action="submit" name="form" autocomplete="on">
+        <label for="username" class="formLabel">
+          <span class="inputSpan">Ім'я</span>
+          <input class="inputField" type="text" name="username" id="username" required/>
+        </label>
+        <label for="tel" class="formLabel"> 
+          <span class="inputSpan">Телефон</span>
+          <div class="phone">
+            <div class="phoneCode">+380</div>
+            <input class="inputField inputFieldPhone" type="tel" name="tel" id="tel" required/>
+          </div>
+        </label>
+        <label for="auto" class="formLabel"> 
+          <span class="inputSpan">Марка авто</span>
+          <input class="inputField" type="text" name="auto" id="auto" required/>
+        </label>
+        <label for="model" class="formLabel"> 
+          <span class="inputSpan">Модель авто</span>
+          <input class="inputField" type="text" name="model" id="model" required/>
+        </label>
+        <div class="radioWrap">
+          <p>Оберіть комплект:</p>
+          <div class="lableWrap jsOrderType">
+              <label class="kindLable">
+                <input class="radioBtn jsRadioBtn" id="complect" type="radio" name="kind" value="complectPrice" checked>
+                <img class="radioImg" src="./images/mats/complect.jpg" alt="комплект">
+              </label>
+              <label class="kindLable">
+                <input class="radioBtn jsRadioBtn" id="front" type="radio" name="kind" value="frontPrice">
+                <img class="radioImg" src="./images/mats/front.jpg" alt="передній комплект">
+              </label>
+              <label class="kindLable">
+                <input class="radioBtn jsRadioBtn" id="driver" type="radio" name="kind" value="driverPrice">
+                <img class="radioImg" src="./images/mats/driver.jpg" alt="водійский">
+              </label>
+              <label class="kindLable">
+                <input class="radioBtn jsRadioBtn" id="passanger" type="radio" name="kind" value="passangerPrice">
+                <img class="radioImg" src="./images/mats/passanger.jpg" alt="пасажирський">
+              </label>
+              <label class="kindLable">
+                <input class="radioBtn jsRadioBtn" id="trunk" type="radio" name="kind" value="trunkPrice">
+                <img class="radioImg" src="./images/mats/trunk.jpg" alt="багажник">
+              </label>
+          </div>
+        </div>
+        <div class="radioWrap">
+          <p>Оберіть колір матеріалу:</p>
+          <div  class="lableWrap">
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="чорний" checked>
+              <img class="radioImg" src="./images/inputs/material/black.jpg" alt="чорний">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="синій">
+              <img class="radioImg" src="./images/inputs/material/blue.jpg" alt="синій">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="червоний">
+              <img class="radioImg" src="./images/inputs/material/red.jpg" alt="червоний">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="бежевий">
+              <img class="radioImg" src="./images/inputs/material/beige.jpg" alt="бежевий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="помаранчевий">
+              <img class="radioImg" src="./images/inputs/material/orange.jpg" alt="помаранчевий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="сірий">
+              <img class="radioImg" src="./images/inputs/material/grey.jpg" alt="сірий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="material" value="коричневий">
+              <img class="radioImg" src="./images/inputs/material/brown.jpg" alt="коричневий">
+            </label>
+          </div>
+        </div>
+        <div class="radioWrap">
+          <p>Оберіть колір канту:</p>
+          <div class="lableWrap">
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="коричневий" checked>
+              <img class="radioImg" src="./images/inputs/edging/brown.jpg" alt="коричневий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="сірий">
+              <img class="radioImg" src="./images/inputs/edging/grey.jpg" alt="сірий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="пораманчевий">
+              <img class="radioImg" src="./images/inputs/edging/orange.jpg" alt="пораманчевий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="бежевий">
+              <img class="radioImg" src="./images/inputs/edging/beige.jpg" alt="бежевий">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="червоний">
+              <img class="radioImg" src="./images/inputs/edging/red.jpg" alt="червоний">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="синій">
+              <img class="radioImg" src="./images/inputs/edging/blue.jpg" alt="синій">
+            </label>
+            <label class="materialLable">
+              <input class="radioBtn" type="radio" name="edging" value="чорний">
+              <img class="radioImg" src="./images/inputs/edging/black.jpg" alt="чорний">
+            </label>
+          </div>
+        </div>
+        <label for="feedback" class="formLabel">
+          <span class="textareaSpan">Коментар</span>
+          <textarea class="textareaField" name="feedback" placeholder="Введіть текст" id="feedback"></textarea>
+        </label>
+        <div class="orderBtnWrap">
+          <div class="modalPrice">
+          </div>
+          <button class="orderBtn" type="submit">Замовити
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>  
+  <div class="popup hide">
+    <p>Дякуємо за замовлення! </p>
+    <p>Очікуйте на наш дзвінок.</p>
+  </div>
+  <div class="popupError hide">
+    <button type="button" class="modalClose jsClosePopup">
+      <svg class="iconClose" width="20" height="20">
+        <use href="./images/svg/symbol-defs.svg#icon-close">
+        </use>
+      </svg>
+    </button>
+    <p>Вибачте, виникли технічні проблеми 😔</p>
+    <p>Для оформлення замовлення зателефонуйте нам, будь ласка</p>
+    <a href="tel:+380634265030">+38 063 426-50-30</a>
+    <a href="tel:+380675239272">+38 067 523-92-72</a>
+  </div>
