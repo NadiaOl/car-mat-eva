@@ -17,7 +17,9 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: 24px;
     width: 100vw;
+    max-height: 95%;
     background: var(--additional-color);
     border-radius: 12px;
     font-size: 12px;
@@ -65,16 +67,23 @@
 
 .marquee {
     overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-    margin: 10px 0;
+    position: absolute;
+    z-index: 20;
+    color: var(--white-color);
+    background-color: var(--main-color);
+
 }
 
 .attentionModal {
+    white-space: nowrap;
+    margin: 10px 0;
     display: inline-block;
     width: 100%;
-    animation: marquee 30s linear infinite;
+    animation-name: marquee;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 @keyframes marquee {
