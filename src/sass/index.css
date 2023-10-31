@@ -431,6 +431,7 @@ body {
   font-size: 34px;
   font-family: "Nexa Script Semi";
   text-align: center;
+  display: swap;
 }
 @media screen and (min-width: 768px) {
   .heroTitle {
@@ -449,6 +450,7 @@ body {
   font-size: 22px;
   margin: 20px auto;
   text-align: center;
+  display: swap;
 }
 @media screen and (min-width: 768px) {
   .heroSubTitle {
