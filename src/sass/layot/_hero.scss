@@ -1,36 +1,68 @@
 .hero {
     position: relative;
-    background-image: linear-gradient(200deg, rgba(225,221,220,1) 10%, rgba(225,221,220,0) 50%), url('../images/hero-bg.jpg');
+    background-image: linear-gradient(200deg, rgba(225,221,220,1) 10%, rgba(225,221,220,0) 50%), url('../images//hero-bg-mob.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: var(--shadow);
     height: 650px;
     width: 100%;
     margin: 0 auto;
+    justify-content: center;
+
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(200deg, rgba(225,221,220,1) 10%, rgba(225,221,220,0) 50%), url('../images/hero-bg.jpg');
+
+    }
+
 }
 
 .heroWrap {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 0px;
-    right: 20px;
-    width: 500px;
+    height: 100%;
+    padding: 40px;
+    
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 600px;
+    };
+}
+.heroTitleWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
-.heroTitle {
-font-size: 54px;
-font-family: 'Nexa Script Semi';
-margin: 20px 0 340px 0;
-text-align: center;
+
+.heroTitle{
+    font-size: 34px;
+    font-family: 'Nexa Script Semi';
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        font-size: 44px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 54px;
+    }
 }
 
-.heroSubTitle {
+.heroSubTitle{
     color: var(--additional-color);
     font-family: 'Nexa Script Semi';
-    font-size: 32px;
+    font-size: 22px;
     margin: 20px auto;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 32px;
+    }
 }
 
 .heroBtn{

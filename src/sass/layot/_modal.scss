@@ -17,10 +17,22 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 500px;
+    width: 100vw;
     background: var(--additional-color);
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 12px;
+    overflow: auto; 
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 480px;
+            font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 500px;
+    }
 }
 
 .modalClose {
@@ -62,15 +74,15 @@
 .attentionModal {
     display: inline-block;
     width: 100%;
-    animation: marquee 30s linear infinite; /* Настройка анимации */
+    animation: marquee 30s linear infinite;
 }
 
 @keyframes marquee {
     0% {
-        transform: translateX(100%); /* Начальное положение за пределами видимой области */
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-100%); /* Конечное положение за пределами видимой области */
+        transform: translateX(-100%);
     }
 }
 

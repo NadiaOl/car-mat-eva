@@ -1,19 +1,24 @@
 .contactsWrap {
     display: flex;
+    flex-direction: column;
     background-color: rgba(240, 240, 240, 0.5);
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 90px;
     gap: 60px;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .addresssWrap {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .contactsTitle {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .contactsItems {
     display: flex;
@@ -23,15 +28,14 @@
 
 .openMap {
     margin-top: 10px;
-
 }
 
 .map {
-
     border-radius: 12px;
     box-shadow: var(--shadow);
-    width: 100px;
-    height: 75px;
+    width: 100%;
+    height: auto;
+
     @media screen and (min-width: 1200px) {
         width: 600px;
         height: 400px;

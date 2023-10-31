@@ -1,12 +1,11 @@
-.slider {
-    position: relative;
-    height: 665px;
-}
 
 .mySlides {
     display: none;
 }
 
+.sliderTitle {
+    margin-bottom: 30px;
+}
 .sliderImg {
     vertical-align: middle;
     border-radius: 12px;
@@ -17,9 +16,7 @@
 .slideshow-container {
     border-radius: 12px;
     max-width: 100%;
-    position: absolute;
     margin: auto;
-    top: 170px;
     box-shadow: var(--shadow);
 }
 
@@ -27,7 +24,7 @@
     background-color: var(--main-color);
 }
 
-/* Fading animation */
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -37,8 +34,3 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-/* On smaller screens, decrease text size */
-// @media only screen and (max-width: 300px) {
-//   .text {font-size: 11px}
-// }

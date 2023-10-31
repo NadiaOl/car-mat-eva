@@ -1,6 +1,5 @@
 .popup, .popupError {
-    width: 400px;
-    height: 100px;
+
     background-color: var(--white-color);
     font-weight: 700;
     display: flex;
@@ -15,9 +14,45 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 480px) {
+        padding: 40px;
+    }
+    // @media screen and (min-width: 768px) {
+    //     padding: 40px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     padding: 40px;
+    // }
+
+}
+.popup {
+    width: 260px;
+    @media screen and (min-width: 480px) {
+        width: 300px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 400px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 400px;
+    }
 }
 .popupError {
-    width: 650px;
-    height: 150px;
+    width: 260px;
+    @media screen and (min-width: 480px) {
+        width: 300px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 500px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 650px;
+    }
+}
+
+.popupText {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
