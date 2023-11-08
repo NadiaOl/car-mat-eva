@@ -10,14 +10,23 @@
     border-radius: 12px;
     background-color: var(--white-color);
     box-shadow: var(--shadow);
-    max-width: 350px;
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 30px)/2);
+    max-width: 260px;
+    @media screen and (min-width: 480px) {
+        max-width: 350px;
     }
 }
 
 .advantagesImg {
     width: 100%;
+    height: auto;
+    @media screen and (min-width: 280px) {
+        width: 260px;
+        height: 208px;
+    }
+    @media screen and (min-width: 480px) {
+        width: 350px;
+        height: 280px;
+    }
 }
 
 .advantagesTitle {
